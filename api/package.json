@@ -1,0 +1,26 @@
+{
+  "name": "SE-III",
+  "version": "0.0.1",
+  "description": "Prueba técnica",
+  "main": "app.js",
+  "scripts": {
+    "start": "NODE_ENV=production babel-node index.js",
+    "dev": "NODE_ENV=dev nodemon index.js --exec babel-node"
+  },
+  "author": "Ignacio Morales",
+  "license": "MIT",
+  "dependencies": {
+    "@meanie/mongoose-to-json": "^2.6.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "eslint-config-standard": "^12.0.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.5.5",
+    "mongoose-unique-validator": "^2.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-latest": "^6.24.1",
+    "nodemon": "^2.0.16"
+  }
+}
