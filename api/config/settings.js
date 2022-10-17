@@ -7,7 +7,7 @@ const settings = {
 		itemsPerPage: 20,
 		validators: {
 			required: () => ({ required: [true, 'Campo obligatorio'] }),
-			min: min => ({ min: [min, `El valor no puede ser menor a ${max}`] }),
+			min: min => ({ min: [min, `El valor no puede ser menor a ${min}`] }),
 			max: max => ({ max: [max, `El valor no puede ser mayor a ${max}`] }),
 			minLength: min => ({ minLength: [min, 'Minimo de caracteres no alcanzado'] }),
 			maxLength: max => ({ maxLength: [max, 'Limite de caracteres superado'] }),

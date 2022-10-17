@@ -14,7 +14,6 @@ module.exports = helper => {
     return new Promise(async (resolve, reject) => {
       const data = await model.create(req.body)
         .catch(error => {
-          console.log(error);
           const errors = error.name === 'ValidationError'
             ? Object.entries(error.errors).reduce((prev, [key, value]) => {
               prev[key] = value.message;
